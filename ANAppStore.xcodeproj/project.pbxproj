@@ -7,13 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7FA009A269C99FD8EFD07423 /* libPods-ANAppStore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7733966D2D5F1C9A6236BBA8 /* libPods-ANAppStore.a */; };
 		D2324F122271F20D0020D3D6 /* ANAppStore.h in Headers */ = {isa = PBXBuildFile; fileRef = D2324F102271F20D0020D3D6 /* ANAppStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2324F192271F2DC0020D3D6 /* AppStoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2324F182271F2DC0020D3D6 /* AppStoreService.swift */; };
+		D2324F1D2271F34D0020D3D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2324F1C2271F34D0020D3D6 /* Assets.xcassets */; };
+		D2324F202271F3E30020D3D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2324F1F2271F3E30020D3D6 /* Main.storyboard */; };
+		D2324F222271FBB30020D3D6 /* TestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2324F212271FBB30020D3D6 /* TestController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		39BB864874C24BC968C04A9E /* Pods-ANAppStore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ANAppStore.debug.xcconfig"; path = "Target Support Files/Pods-ANAppStore/Pods-ANAppStore.debug.xcconfig"; sourceTree = "<group>"; };
+		7733966D2D5F1C9A6236BBA8 /* libPods-ANAppStore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ANAppStore.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AF4B519658C790E5DF1705A /* Pods-ANAppStore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ANAppStore.release.xcconfig"; path = "Target Support Files/Pods-ANAppStore/Pods-ANAppStore.release.xcconfig"; sourceTree = "<group>"; };
 		D2324F0D2271F20C0020D3D6 /* ANAppStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ANAppStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2324F102271F20D0020D3D6 /* ANAppStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ANAppStore.h; sourceTree = "<group>"; };
 		D2324F112271F20D0020D3D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2324F182271F2DC0020D3D6 /* AppStoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreService.swift; sourceTree = "<group>"; };
+		D2324F1C2271F34D0020D3D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D2324F1F2271F3E30020D3D6 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		D2324F212271FBB30020D3D6 /* TestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FA009A269C99FD8EFD07423 /* libPods-ANAppStore.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0319164C5047F1AE50239ACD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				39BB864874C24BC968C04A9E /* Pods-ANAppStore.debug.xcconfig */,
+				8AF4B519658C790E5DF1705A /* Pods-ANAppStore.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5452BD611A2EC9CBD741A08C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7733966D2D5F1C9A6236BBA8 /* libPods-ANAppStore.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D2324F032271F20C0020D3D6 = {
 			isa = PBXGroup;
 			children = (
 				D2324F0F2271F20D0020D3D6 /* ANAppStore */,
 				D2324F0E2271F20D0020D3D6 /* Products */,
+				0319164C5047F1AE50239ACD /* Pods */,
+				5452BD611A2EC9CBD741A08C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -46,10 +78,46 @@
 		D2324F0F2271F20D0020D3D6 /* ANAppStore */ = {
 			isa = PBXGroup;
 			children = (
+				D2324F232271FBB80020D3D6 /* controllers */,
+				D2324F1E2271F3D50020D3D6 /* views */,
+				D2324F1B2271F3420020D3D6 /* resources */,
+				D2324F1A2271F3060020D3D6 /* services */,
 				D2324F102271F20D0020D3D6 /* ANAppStore.h */,
 				D2324F112271F20D0020D3D6 /* Info.plist */,
 			);
 			path = ANAppStore;
+			sourceTree = "<group>";
+		};
+		D2324F1A2271F3060020D3D6 /* services */ = {
+			isa = PBXGroup;
+			children = (
+				D2324F182271F2DC0020D3D6 /* AppStoreService.swift */,
+			);
+			path = services;
+			sourceTree = "<group>";
+		};
+		D2324F1B2271F3420020D3D6 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				D2324F1C2271F34D0020D3D6 /* Assets.xcassets */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		D2324F1E2271F3D50020D3D6 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				D2324F1F2271F3E30020D3D6 /* Main.storyboard */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		D2324F232271FBB80020D3D6 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D2324F212271FBB30020D3D6 /* TestController.swift */,
+			);
+			path = controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -70,6 +138,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D2324F152271F20D0020D3D6 /* Build configuration list for PBXNativeTarget "ANAppStore" */;
 			buildPhases = (
+				FC22A946C866F0BFB071511C /* [CP] Check Pods Manifest.lock */,
 				D2324F082271F20C0020D3D6 /* Headers */,
 				D2324F092271F20C0020D3D6 /* Sources */,
 				D2324F0A2271F20C0020D3D6 /* Frameworks */,
@@ -95,6 +164,7 @@
 				TargetAttributes = {
 					D2324F0C2271F20C0020D3D6 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -120,16 +190,45 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2324F1D2271F34D0020D3D6 /* Assets.xcassets in Resources */,
+				D2324F202271F3E30020D3D6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FC22A946C866F0BFB071511C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ANAppStore-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D2324F092271F20C0020D3D6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2324F192271F2DC0020D3D6 /* AppStoreService.swift in Sources */,
+				D2324F222271FBB30020D3D6 /* TestController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +359,9 @@
 		};
 		D2324F162271F20D0020D3D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39BB864874C24BC968C04A9E /* Pods-ANAppStore.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -278,6 +379,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.autonation.ANAppStore;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -285,7 +387,9 @@
 		};
 		D2324F172271F20D0020D3D6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AF4B519658C790E5DF1705A /* Pods-ANAppStore.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;

@@ -1,0 +1,6 @@
+module Pods_ANAppStore {
+  umbrella header "Pods-ANAppStore-umbrella.h"
+
+  export *
+  module * { export * }
+}
