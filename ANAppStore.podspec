@@ -12,9 +12,9 @@ s.license = { :type => "MIT", :file => "LICENSE" }
 
 s.author = { "Adam C. Smith" => "smitha26@autonation.com" }
 
-s.homepage = 'https://github.com/acsmith843/AutoNationAppStore'
+s.homepage = 'https://autonation.visualstudio.com/Global/_git/App.Store.iOS.SDK'
 
-s.source = { :git => 'https://github.com/acsmith843/AutoNationAppStore.git', :tag => s.version.to_s }
+s.source = { :git => 'https://autonation.visualstudio.com/Global/_git/App.Store.iOS.SDK', :tag => s.version.to_s }
 
 s.framework = "UIKit"
 s.dependency 'Alamofire', '~> 4.7'

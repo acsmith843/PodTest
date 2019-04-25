@@ -21,7 +21,7 @@ class AppStoreService {
         
         let appStoreUrl = "/TODO"
         
-        Alamofier.request(appStoreUrl,
+        Alamofire.request(appStoreUrl,
                           method: .get,
                           parameters: params,
                           encoding: URLEncoding.default,
